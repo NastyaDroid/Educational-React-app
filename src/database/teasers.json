@@ -1,0 +1,8 @@
+[
+    { "title": "Кофемашины", "url": "./img/teasersImg/coffeeMachines.jpg", "link": "coffeemachines", "objectID": 0 },
+    { "title": "Кофемолки", "url": "./img/teasersImg/grinder.jpg", "link": "products", "objectID": 1 },
+    { "title": "Свежеобжаренный кофе", "url": "./img/teasersImg/coffee.jpg", "link": "products", "objectID": 2 },
+    { "title": "Фирменный чай", "url": "./img/teasersImg/tea.jpg", "link": "products", "objectID": 3 },
+    { "title": "Посуда", "url": "./img/teasersImg/tableware.jpg", "link": "products", "objectID": 4 },
+    { "title":  "Аксессуары", "url": "./img/teasersImg/accessories.jpg", "link": "products", "objectID": 5 }
+]

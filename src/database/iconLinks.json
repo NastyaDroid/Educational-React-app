@@ -1,0 +1,5 @@
+[
+    { "title": "Профиль", "url": "/registration", "objectID": 0 },
+    { "title": "Избранное", "url": "/registration", "objectID": 1 },
+    { "title": "Корзина", "url": "/registration", "objectID": 2 }
+  ]
