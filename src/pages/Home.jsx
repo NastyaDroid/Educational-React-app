@@ -4,9 +4,7 @@ import TeaserSection from "../components/MainSection/TeaserSection";
 
 const Home = () => {
     return (
-        <div className="main">
             <TeaserSection />
-        </div>
     )
 }
 

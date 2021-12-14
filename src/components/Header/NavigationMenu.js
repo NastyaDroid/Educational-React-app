@@ -1,5 +1,5 @@
 import React from "react";
-import { Outlet, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 const NavigationMenu = ( { list } ) => {
@@ -8,7 +8,6 @@ const NavigationMenu = ( { list } ) => {
             {list.map((item) => (
                    <Link to={item.url} key={item.objectID} className="header__link">{item.title}</Link> 
                ))}
-               <Outlet />
         </nav>
     )
   }
