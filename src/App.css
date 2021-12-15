@@ -1,3 +1,21 @@
 .main {
   box-sizing: border-box;
 }
+.title {
+  font-size: 2rem;
+}
+.link {
+  text-decoration: none;
+  color: #fff;
+}
+.btn {
+    background-color: #8B6F5D;
+    outline: none;
+    color: #fff;
+    border: none;
+    border-radius: 0.625rem;
+    cursor: pointer;
+}
+.btn:hover {
+  opacity: 0.7;
+}

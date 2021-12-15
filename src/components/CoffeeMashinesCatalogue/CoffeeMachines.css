@@ -5,14 +5,16 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.product-card {
+.main__product-card {
     flex: 1 1 350px;
     margin: 20px;
-    padding: 20px;
-    box-shadow: 5px 5px 16px rgba(0,0,0,0.3);
     display: flex;
     flex-direction: column;
     border-radius: 12px;
+}
+.product {
+    box-shadow: 5px 5px 16px rgba(0,0,0,0.3);
+    padding: 20px;
 }
 .product__category {
     font-size: 0.8rem;

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Card = ( { card } ) => {
     return (
-        <div className='product-card'>
+        <div className='main__product-card product'>
             <a href="https://google.com" className="product__category">{card.intendedUse}</a>
             <Link to={card.link} className='product__name'>{card.name}</Link>
             <img className='product__image' src={card.url} alt={card.name} width={250} height={250} />

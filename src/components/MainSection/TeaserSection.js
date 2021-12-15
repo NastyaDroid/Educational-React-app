@@ -5,7 +5,7 @@ import './TeaserSection.css';
 
 const TeaserSection = () => {
     return (
-        <section className='main main__teaser'>
+        <section className='main__teaser teaser'>
             <Teaser list={teasers} />
         </section>
     );

@@ -5,7 +5,7 @@ const NotFound = () => {
     let location = useLocation();
     return (
         <div>
-            <h1>Страница не найдена(404){location.pathname}</h1>
+            <h1>Страница в разработке{location.pathname}</h1>
         </div>
     )
 }

@@ -6,7 +6,7 @@ const Profile = (props) => {
         <ul className='header__profile profile'>
                {props.list.map((item) => (
                    <li className="profile__item" key={item.objectID}>
-                   <Link to={item.url} className="header__link">{item.title}</Link>
+                   <Link to={item.url} className="header__link link">{item.title}</Link>
                    </li>
                ))}
             </ul> 
