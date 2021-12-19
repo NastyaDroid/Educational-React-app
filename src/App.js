@@ -42,8 +42,10 @@ const context = {isAuth, setIsAuth, login, logout}
         <Routes>
           <Route path="/" element={<Layout />} >
             <Route index element={<Home />} />
-            <Route path="coffeemachines" element={<CoffeeMachines />} />
-            <Route path="card/:name" element={<CoffeeMachineDescription />} />
+            <Route path="coffeemachines" element={<CoffeeMachineLayout />} >
+              <Route index element={<CoffeeMachines />} />
+              <Route path=":name" element={<CoffeeMachineDescription />} />
+              </Route>
             <Route path="profile" element={<UserPage/>} />
             <Route path="login" element={<Login />} />
             <Route path="*" element={<NotFound />} />
@@ -59,7 +61,11 @@ const context = {isAuth, setIsAuth, login, logout}
 
 export default App;
 
-
+const CoffeeMachineLayout = () => {
+  return (
+    <Outlet />
+  )
+}
 
 const Layout = () => {
   return (

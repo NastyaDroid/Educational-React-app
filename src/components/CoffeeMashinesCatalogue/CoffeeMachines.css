@@ -36,11 +36,6 @@
     margin-top: 20px;
 }
 .product__button {
-    background-color: #8B6F5D;
-    color: #fff;
-    border: 1px solid #8B6F5D;
-    border-radius: 0.625rem;
-    cursor: pointer;
     padding: 8px 15px;
     display: flex;
 }
