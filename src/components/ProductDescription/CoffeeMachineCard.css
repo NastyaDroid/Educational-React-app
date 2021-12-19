@@ -1,0 +1,62 @@
+.main__card {
+    max-width: 960px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: auto 320px;
+    grid-template-areas: 
+    " info price"
+    " info . ";
+    grid-gap: 32px;
+    position: relative;
+}
+.card__info {
+    grid-area: info;
+    max-width: 560px;
+}
+.card__title {
+    font-size: 32px;
+}
+.card__aside {
+    grid-area: price;
+    text-align: center;
+    box-shadow: 5px 5px 16px rgba(0,0,0,0.3);
+    border-radius: 12px;
+    top: 170px;
+    position:sticky
+
+}
+.card__price {
+    font-size: 32px;
+    font-weight: bold;
+    color: #8B6F5D;
+}
+.card__btn {
+    margin: 32px 0;
+    padding: 12px 18px;
+}
+.card__btn:hover {
+    opacity: 0.7;
+    transition: .3s;
+}
+@media (min-width: 481px) and (max-width: 1000px) {
+    .main__card {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 480px) {
+    .main__card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .card__image {
+        width: 320px;
+        height: 320px;
+    }
+    .card__aside {
+        position: unset;
+    }
+}
