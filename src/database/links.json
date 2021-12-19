@@ -4,6 +4,5 @@
     { "title": "Аксессуары", "url": "/products", "objectID": 2 },
     { "title": "Посуда", "url": "/products", "objectID": 3 },
     { "title": "Кофе", "url": "/products", "objectID": 4 },
-    { "title": "Чай", "url": "/products", "objectID": 5 },
-    { "title": "Бренды", "url": "/products", "objectID": 6 }
+    { "title": "Чай", "url": "/products", "objectID": 5 }
   ]

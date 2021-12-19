@@ -8,11 +8,11 @@ import NotFound from './components/NotFound';
 import {usersDb} from "./api/users";
 import UserPage from "./pages/UserPage";
 import Login from "./components/Login/Login";
+import CoffeeMachineDescription from "./pages/CoffeeMachineDescription";
 
 export const AuthContext = createContext(null);
 
 const App = () => {
-
   const [isAuth, setIsAuth] = useState(false)
 
   useEffect(() => {
@@ -24,7 +24,7 @@ const App = () => {
   }, [])
   function login() {
     localStorage.setItem('isAuth', 'true')
-    setIsAuth(prevState => true)
+    setIsAuth(true)
 }
 
 function logout() {
@@ -42,6 +42,7 @@ const context = {isAuth, setIsAuth, login, logout}
           <Route path="/" element={<Layout />} >
             <Route index element={<Home />} />
             <Route path="coffeemachines" element={<CoffeeMachines />} />
+            <Route path="card/:name" element={<CoffeeMachineDescription />} />
             <Route path="profile" element={<UserPage/>} />
             <Route path="login" element={<Login />} />
             <Route path="*" element={<NotFound />} />

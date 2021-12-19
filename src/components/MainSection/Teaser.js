@@ -6,7 +6,7 @@ const Teaser = ( {list} ) => {
             list.map((item) => (
                 <div key={item.objectID} className="teaser__item">
                 <Link to={item.link}>
-                    <img src={item.url} alt={item.title} width={410} height={254}/>
+                    <img className="teaser__image" src={item.url} alt={item.title} width={410} height={254}/>
                 </Link>
                 </div>
             ))

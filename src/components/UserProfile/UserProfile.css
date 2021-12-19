@@ -21,7 +21,8 @@
     flex: 0 0 100%;
 }
  .user__aside {
-     flex: 0 0 25%;
+     flex: 1;
+     max-width: 18rem;
      margin-right: 10px;
      border: 1px solid #D7CEC3;
      border-bottom: none;
@@ -48,6 +49,9 @@
 }
 .user__aside-list-link {
     color: #8B6F5D;
+}
+.user__section {
+    flex: 1;
 }
 .user__section-title{
     margin: 10px;

@@ -1,7 +1,7 @@
 .main__form {
     margin: 0 auto; 
-    width: 37.5rem;
-    height: 27rem;
+    max-width: 30.5rem;
+    max-height: 27rem;
     margin-top: 6rem;
     border: 1px solid #8B6F5D;
     border-radius: 0.5rem;
@@ -17,7 +17,7 @@
     
 }
 .form__title {
-    margin: 0;
+    margin: 1rem;
 }
 .form__input-wrapper {
     display: flex;
@@ -41,6 +41,28 @@
     color: #cccccc;
 }
 .form__btn {
+    margin: 2rem 0;
     width: 11.25rem;
     padding: 12px 16px;
+}
+@media (min-width: 421px) and (max-width: 540px) {
+    .form {
+        margin-left: 1.2rem;
+        margin-right: 1.2rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .form {
+        margin-left: 1.2rem;
+        margin-right: 1.2rem;
+    }
+    .form__title{
+        font-size: 1.2rem;
+    }
+    .form__input-wrapper {
+        display: flex;
+        flex-direction: column;
+        max-width: 16.25rem;
+    }
 }

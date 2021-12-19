@@ -9,26 +9,22 @@
 .header__container {
     max-width: 1290px;
     margin: 0 auto;
-    display: grid;
-    grid-template-areas: 
-    " logo search profile"
-    ". nav .";
-    grid-template-columns: 15% 65% 20%;
-    grid-template-rows: 3fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 0.5rem;
 }
 .header__logo {
-    grid-area: logo;
-    display: flex;
-    align-items: center;
+    flex: 1 0;
 }
 .header__search {
-    grid-area: search;
-    display: flex;
-    align-items: center;
+    flex: 3 0;
 }
+
 .search__input{
+    width: 90%;
     font-size: 1rem;
-    width: 100%;
     line-height: 30px;
     border: 1px solid #ccc;
     border-radius: 20px;
@@ -39,9 +35,9 @@
     color: #ccc;
 }
   .header__profile{
-    grid-area: profile;
+    flex: 2 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   .profile__item{
     list-style-type: none;
@@ -52,37 +48,36 @@
     color: #4F3F34;
   }
   .header__nav {
-    grid-area: nav;
+    flex: 1 1 100%;
     display: flex;
     justify-content: space-between;
   }
-  @media (min-width: 481px) and (max-width: 1000px) {
-    .header__container {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-between;
-    }
-    .header__logo {
-      flex: 0 0 20%;
-  }
+   @media (min-width: 481px) and (max-width: 780px) {
+     .header__container{
+       margin-left: 0.5rem;
+     }
     .header__search {
-      flex: 0 0 70%;
+      flex: 1 1 100%;
+      order: 30;
     }
     .header__profile{
-      flex: 0 0 20%;
-      display: flex;
-      justify-content: space-between;
+      padding-left: 0.5rem;
+      flex: 1 1 60%;
+      order: 20;
     }
     .header__nav{
-      flex: 0 0 70%;
+      order: 50;
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
-      align-items: center;
+    }
+
+    .header__link {
+      flex: 1 1 30%;
     }
   }
   @media (max-width: 480px) {
     .header__container {
+      margin-top: 0.5rem;
       display: flex;
       flex-flow: row wrap;
     }
@@ -98,7 +93,14 @@
     justify-content: flex-start;
   }
   .header__nav{
+    line-height: 5vh;
     flex: 0 0 40%;
     flex-direction: column;
+  }
+  .header__link {
+    border-bottom: 1px solid #ccc;
+  }
+  .header__link:last-child {
+    border:none;
   }
 }

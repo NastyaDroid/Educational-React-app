@@ -49,6 +49,7 @@ const UserProfile = () => {
             <section className='user__section'>
                 <h2 className='user__section-title title' >Личные данные</h2>
                 <table className='user__section-table'>
+                    <tbody>
                     <tr>
                         <td>Имя:</td>
                         <td>Анастасия Власенко</td>
@@ -61,6 +62,7 @@ const UserProfile = () => {
                         <td>Email:</td>
                         <td>admin@mail.ru</td>
                     </tr>
+                    </tbody>
                 </table>
                 {isAuth && <button className='user__btn btn' onClick={logout}>Выйти из профиля</button>}
             </section>
