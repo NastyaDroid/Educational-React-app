@@ -21,6 +21,7 @@ const App = () => {
       if (localStorage.getItem('isAuth')) {
           setIsAuth(true)
       }
+
   }, [])
   function login() {
     localStorage.setItem('isAuth', 'true')
