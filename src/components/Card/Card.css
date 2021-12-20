@@ -1,11 +1,4 @@
-.main__product-list {
-    max-width: 1290px;
-    margin: 50px auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.main__product-card {
+.product__card {
     flex: 1 1 350px;
     margin: 20px;
     display: flex;
@@ -39,17 +32,16 @@
     padding: 8px 15px;
     display: flex;
 }
-.product__button:hover {
-    opacity: 0.7;
-    transition: .3s;
-}  
 .product__button-title {
     padding-left: 12px;
     align-self: center;
 }
 @media (min-width: 481px) and (max-width: 1000px) {
-    .main__product-card {
+    .product__card {
         flex: 1 1 300px;
-    margin: 0.5rem;
+        margin: 1.2rem;
+    }
+    .product__name {
+        height: 64px;
     }
 }

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import {getData} from "../../api/getData";
+import {getCatalog} from "../../api/getData";
 import './CoffeeMachineCard.css'
 
 const CoffeeMachineCard= () => {
@@ -8,7 +8,7 @@ const CoffeeMachineCard= () => {
     const {name} = useParams();
     
     useEffect(() => {
-        getData().then((res) => {
+        getCatalog().then((res) => {
             const {data} = res;
             const result = data.find((item) => item.name === name)
             setMachine(result)

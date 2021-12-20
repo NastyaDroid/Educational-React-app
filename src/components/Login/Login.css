@@ -1,11 +1,10 @@
-.main__form {
+.form__container {
     margin: 0 auto; 
     max-width: 30.5rem;
     max-height: 27rem;
     margin-top: 6rem;
     border: 1px solid #8B6F5D;
     border-radius: 0.5rem;
-
 }
 .form {
     display: flex;
@@ -13,8 +12,7 @@
     align-items: center;
     justify-content: space-around;
     background-color: #fff;
-    color: #8B6F5D;
-    
+    color: #8B6F5D;  
 }
 .form__title {
     margin: 1rem;
@@ -61,8 +59,6 @@
         font-size: 1.2rem;
     }
     .form__input-wrapper {
-        display: flex;
-        flex-direction: column;
         max-width: 16.25rem;
     }
 }

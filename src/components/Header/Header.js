@@ -1,6 +1,5 @@
 import React from 'react';
-import iconLinks from '../../database/iconLinks.json';
-import links from '../../database/links.json';
+import links from '../../localJSON/links.json';
 import Logo from './Logo';
 import InputSearch from './InputSearch';
 import Profile from './Profile';
@@ -9,15 +8,18 @@ import './Header.css';
 
 const Header = () => {
     return (
-            <header className='main__header header'>
-                <div className='header__container'>
+        <header className='header__container header'>
+            <div className='header__main'>
+                <div className='header__top'>
                     <Logo />
-                    <InputSearch /> 
-                    <Profile list={iconLinks} />
-                    <NavigationMenu list={links} />
+                    <InputSearch />
+                    <Profile />
                 </div>
-            </header>
+            </div>
+            <NavigationMenu list={links} />
+        </header>
+
     );
-} 
+}
 
 export default Header;

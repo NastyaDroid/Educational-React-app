@@ -1,12 +1,13 @@
-.main {
-  box-sizing: border-box;
-}
 .title {
   font-size: 2rem;
 }
 .link {
   text-decoration: none;
   color: #fff;
+}
+.link:hover {
+  opacity: 0.7;
+  transition: .3s;
 }
 .btn {
     background-color: #8B6F5D;

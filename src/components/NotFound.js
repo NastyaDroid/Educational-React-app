@@ -4,8 +4,8 @@ import { useLocation } from "react-router-dom";
 const NotFound = () => {
     let location = useLocation();
     return (
-        <div>
-            <h1>Страница в разработке{location.pathname}</h1>
+        <div style={{marginLeft: '20px'}}>
+            <h1>Страница {location.pathname} в разработке</h1>
         </div>
     )
 }

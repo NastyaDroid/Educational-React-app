@@ -1,10 +1,9 @@
 import React from "react";
-
-import TeaserSection from "../components/MainSection/TeaserSection";
+import Teaser from "../components/Teaser/Teaser";
 
 const Home = () => {
     return (
-            <TeaserSection />
+        <Teaser />
     )
 }
 

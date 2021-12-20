@@ -1,18 +1,22 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import Cart from "./Cart";
+import CartIcon from "./CartIcon";
+import FaceIcon from "./FaceIcon";
 
-
-const Profile = (props) => {
+const data = [
+    { title: "Профиль", url: "/profile", objectID: 0, comp: <FaceIcon /> },
+    { title: "Корзина", url: "/registration", objectID: 1, comp: <CartIcon /> }
+]
+const Profile = () => {
     return (
-        <ul className='header__profile profile'>
-               {props.list.map((item) => (
-                   <li className="profile__item" key={item.objectID}>
-                   <Link to={item.url} className="header__link link">{item.title} </Link>
-                   </li>
-               ))}
-               <li className="profile__item"><Cart /></li>
-            </ul> 
+        <nav className='header__profile profile'>
+            {data.map((item) => {
+                return <Link key={item.objectID} to={item.url} className='header__link link'>
+                    <span className='header__profile-icon'>{item.comp}</span>
+                    <span className='header__profile-title'>{item.title}</span>
+                </Link>
+            })}
+        </nav>
     )
 }
 

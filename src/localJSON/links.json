@@ -1,0 +1,8 @@
+[
+    { "title": "Кофемашины", "url": "/coffeemachines", "objectID": 0 },
+    { "title": "Кофемолки", "url": "/products", "objectID": 1 },
+    { "title": "Аксессуары", "url": "/products", "objectID": 2 },
+    { "title": "Посуда", "url": "/products", "objectID": 3 },
+    { "title": "Кофе", "url": "/products", "objectID": 4 },
+    { "title": "Чай", "url": "/products", "objectID": 5 }
+  ]

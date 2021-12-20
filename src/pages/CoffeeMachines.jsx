@@ -1,13 +1,12 @@
 import React from "react";
-import CoffeeMachines from "../components/CoffeeMashinesCatalogue/CoffeeMachines";
-import coffeeMachines from '../database/coffeeMachines.json';
-import '../App.css';
+import Catalog from "../components/Catalog/Catalog";
+import coffeeMachines from '../localJSON/coffeeMachines.json';
 
-const CoffeeMachinesPage = () => {
+const CoffeeMachines = () => {
     return (
-            <CoffeeMachines list={coffeeMachines} />
+            <Catalog list={coffeeMachines} />
     )
 }
 
 
-export default CoffeeMachinesPage;
+export default CoffeeMachines;
