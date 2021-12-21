@@ -1,14 +1,14 @@
 import React, {createContext, useEffect, useState} from "react";
 import { BrowserRouter as Router, Routes, Route, Outlet } from 'react-router-dom';
 import './App.css';
+import {usersDb} from "./api/users";
 import Header from './components/Header/Header';
 import Home from './pages/Home';
 import CoffeeMachines from './pages/CoffeeMachines';
-import NotFound from './components/NotFound';
-import {usersDb} from "./api/users";
+import CoffeeMachineDescription from "./pages/CoffeeMachineDescription";
 import UserPage from "./pages/UserPage";
 import Login from "./components/Login/Login";
-import CoffeeMachineDescription from "./pages/CoffeeMachineDescription";
+import NotFound from './components/NotFound';
 
 export const AuthContext = createContext(null);
 

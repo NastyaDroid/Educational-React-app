@@ -1,13 +1,14 @@
-.main__card {
+.card__container {
     max-width: 960px;
     margin: 50px auto;
+    position: relative;
+}
+.card {
     display: grid;
     grid-template-columns: auto 320px;
     grid-template-areas: 
     " info price"
     " info . ";
-    grid-gap: 32px;
-    position: relative;
 }
 .card__info {
     grid-area: info;
@@ -21,9 +22,8 @@
     text-align: center;
     box-shadow: 5px 5px 16px rgba(0,0,0,0.3);
     border-radius: 12px;
-    top: 170px;
+    top: 220px;
     position:sticky
-
 }
 .card__price {
     font-size: 32px;
@@ -34,35 +34,77 @@
     margin: 32px 0;
     padding: 12px 18px;
 }
-.card__btn:hover {
-    opacity: 0.7;
-    transition: .3s;
-}
-/* @media (min-width: 481px) and (max-width: 1000px) {
-    .main__card {
+
+@media (min-width: 481px) and (max-width: 1000px) {
+    .card__container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .card {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-}
-.card__info {
-    width: 550px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+    }
+    .card__info {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card__image {
+        width: 450px;
+        height: 450px;
+    }
+    .card__aside {
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 250px;
+    }
+    .card__price {
+        margin: 0;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #8B6F5D;
+    }
+    .card__btn {
+        margin: 16px 0;
+        padding: 12px 18px;
     }
 }
 @media (max-width: 480px) {
-    .main__card{
+    .card__container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .card {
         display: flex;
-        justify-content: center;
-        align-items: center;
         flex-direction: column;
     }
+    .card__info {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .card__image {
-        width: 320px;
-        height: 320px;
+        width: 250px;
+        height: 250px;
     }
     .card__aside {
-        position: unset;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 250px;
     }
-} */
+    .card__price {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #8B6F5D;
+    }
+    .card__btn {
+        margin: 16px 0;
+        padding: 12px 18px;
+    }
+}

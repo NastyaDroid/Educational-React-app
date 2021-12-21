@@ -5,7 +5,7 @@ import FaceIcon from "./FaceIcon";
 
 const data = [
     { title: "Профиль", url: "/profile", objectID: 0, comp: <FaceIcon /> },
-    { title: "Корзина", url: "/registration", objectID: 1, comp: <CartIcon /> }
+    { title: "Корзина", url: "/cart", objectID: 1, comp: <CartIcon /> }
 ]
 const Profile = () => {
     return (

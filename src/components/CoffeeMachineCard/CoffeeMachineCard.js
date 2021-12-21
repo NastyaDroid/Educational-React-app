@@ -21,7 +21,7 @@ const CoffeeMachineCard= () => {
         )
     }
            return (
-            <div className='main__card card'>
+            <div className='card__container card'>
                 <div className='card__info'>
                     <h2 className='card__title'>{name}</h2>
                     <img className='card__image' src={`${process.env.PUBLIC_URL}/${machine.url}`}  alt={machine.name} width={500} height={500}/>
@@ -29,10 +29,8 @@ const CoffeeMachineCard= () => {
                     <p className='card__description'>{machine.description}</p>
                 </div>
                 <div className='card__aside'>
-                    <div className='card__lift'>
                     <p className='card__price'>{machine.price} P</p>
                     <button className='card__btn btn'>Добавить в корзину</button>
-                    </div>
                 </div>
             </div>
            )

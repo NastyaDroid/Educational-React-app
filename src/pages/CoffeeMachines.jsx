@@ -4,8 +4,9 @@ import coffeeMachines from '../localJSON/coffeeMachines.json';
 
 const CoffeeMachines = () => {
     return (
-            <Catalog list={coffeeMachines} />
+            <Catalog list={coffeeMachines}/>
     )
+    
 }
 
 
