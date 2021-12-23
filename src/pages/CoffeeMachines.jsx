@@ -1,6 +1,6 @@
 import React from "react";
 import Catalog from "../components/Catalog/Catalog";
-import coffeeMachines from '../localJSON/coffeeMachines.json';
+import coffeeMachines from '../localJSON/coffeeMachines.json'
 
 const CoffeeMachines = () => {
     return (

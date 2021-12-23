@@ -30,7 +30,7 @@ const Login = () => {
 
         if (getCurrentUser) {
             login();
-            return navigate('/profile');
+            return navigate('/');
         }
         return alert('User not found');
     }

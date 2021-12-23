@@ -2,6 +2,7 @@
 .user__container {
     max-width: 960px;
     margin: 50px auto;
+    padding: 0 10px;
 }
 .user {
     display: flex;
@@ -41,6 +42,7 @@
     list-style-type: none;
     height: 60px;
     border-bottom: 1px solid #D7CEC3;
+    box-sizing: unset;
 }
 .user__aside-list-link {
     margin-top: 16px;
@@ -55,9 +57,6 @@
     color: #fff;
     transition-duration: .5s;
     cursor: pointer;
-}
-.user__section {
-    flex: 1;
 }
 .user__btn{
     width: 10rem;

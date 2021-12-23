@@ -2,6 +2,7 @@ import React, {createContext, useEffect, useState} from "react";
 import { BrowserRouter as Router, Routes, Route, Outlet } from 'react-router-dom';
 import './App.css';
 import {usersDb} from "./api/users";
+import { CartContextProvider } from "./CartContext";
 import Header from './components/Header/Header';
 import Home from './pages/Home';
 import CoffeeMachines from './pages/CoffeeMachines';
@@ -9,6 +10,7 @@ import CoffeeMachineDescription from "./pages/CoffeeMachineDescription";
 import UserPage from "./pages/UserPage";
 import Login from "./components/Login/Login";
 import NotFound from './components/NotFound';
+import Cart from "./components/Cart/Cart";
 
 export const AuthContext = createContext(null);
 
@@ -37,6 +39,7 @@ const context = {isAuth, setIsAuth, login, logout}
 
 
   return (
+    <CartContextProvider>
     <AuthContext.Provider value={context}>
       <Router>
         <Routes>
@@ -47,12 +50,14 @@ const context = {isAuth, setIsAuth, login, logout}
               <Route path=":name" element={<CoffeeMachineDescription />} />
               </Route>
             <Route path="profile" element={<UserPage/>} />
+            <Route path="profileCart" element={<Cart />} />
             <Route path="login" element={<Login />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
       </Router>
       </AuthContext.Provider>
+      </CartContextProvider>
   )
 }
 

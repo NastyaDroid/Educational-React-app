@@ -7,7 +7,7 @@ const Catalog = (props) => {
     <section className='section__container'>
       {props.list.map((card) => {
         return (
-          <Card key={card.objectID} card={card} />
+          <Card key={card.id} card={card} />
         )
       })
       }

@@ -1,0 +1,13 @@
+.cart__row:nth-child(odd) {
+    background-color: rgba(242, 242, 242, 0.5);
+}
+.cart__cell {
+    padding: 15px 5px;
+    text-align: left;
+    vertical-align: middle;
+}
+.cart__remove-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}

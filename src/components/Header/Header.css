@@ -18,18 +18,19 @@
   height: 100%;   /* для выравнивания */
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   padding: 0 16px; 
 }
 .header__logo {
-  margin-right: 100px;
+  /* margin-right: 150px; */
+  flex: 1 0;
 }
 .header__search {
-  flex: 1;
+  flex: 2;
 }
 .search__input{
-  width: 90%;
+  width: 80%;
   font-size: 1rem;
   line-height: 30px;
   border: 1px solid #ccc;
@@ -41,7 +42,7 @@
   color: #ccc;
 }
 .header__profile {
-  max-width: 300px;
+  flex: 1;
   margin-right: 20px; 
 }
 .header__link {
@@ -53,6 +54,13 @@
   margin-right: 10px;
 }
 .header__profile-icon {
+  margin-right: 10px;
+}
+.header__cart {
+  display: flex;
+}
+.header__icon {
+  vertical-align: bottom;
   margin-right: 10px;
 }
 .header__nav {
@@ -70,25 +78,28 @@
   .header__main {
     margin-right: 20px;
     padding-bottom: 10px;
+    height: 120px;
     }
     .header__top {
       margin-top: 10px;
       flex-wrap: wrap;
     }
     .header__logo {
-      margin-right: 20px;
+      margin-right: 100px;
       order: 10;
+      flex: unset;
     }
     .header__search {
       min-width: 450px;
       order: 30;
     }
     .search__input{
-      max-width: 500px;
+      width: 100%;
     }
     .header__profile {
-      min-width: 200px;
+      display: flex;
       order: 20;
+      margin-right: 0;
     }
     .header__nav {
       flex-wrap: wrap;
@@ -101,7 +112,7 @@
 
   @media (max-width: 480px) {
     .header__main {
-      height: 100px;
+      height: 120px;
     }
     .header__top {
       flex-wrap: wrap;
@@ -113,6 +124,9 @@
       min-width: 150px;
       flex: unset;
       order: 30;
+    }
+    .search__input {
+      width: 100%;
     }
     .header__profile {
       display: flex;

@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import {getCatalog} from "../../api/getData";
-import './CoffeeMachineCard.css'
+import './CoffeeMachineCard.css';
+import { useContext } from 'react';
+import { CartContext } from '../../CartContext';
 
 const CoffeeMachineCard= () => {
+    const cart = useContext(CartContext);
     const [machine, setMachine] = useState(null);
     const {name} = useParams();
     
@@ -30,7 +33,7 @@ const CoffeeMachineCard= () => {
                 </div>
                 <div className='card__aside'>
                     <p className='card__price'>{machine.price} P</p>
-                    <button className='card__btn btn'>Добавить в корзину</button>
+                    <button className='card__btn btn' onClick={() => cart.append(machine, 1)}>Добавить в корзину</button>
                 </div>
             </div>
            )

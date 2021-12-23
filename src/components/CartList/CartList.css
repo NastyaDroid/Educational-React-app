@@ -1,0 +1,26 @@
+.cart__container {
+    max-width: 1250px;
+    margin: 50px auto;
+    padding-left: 10px;
+}
+.cart__table {
+    max-width: 960px;
+}
+.table__title {
+    padding: 15px 5px;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: bold;
+    color: #4F3F34;
+}
+@media (min-width: 481px) and (max-width: 560px) {
+    .cart__table {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cart__table {
+        font-size: 8px;
+    }
+}
