@@ -42,7 +42,7 @@ const Login = () => {
                 <label className="form__label" htmlFor="user-email">Email *</label>
                 <input className="form__input"
                     id="user-email"
-                    type="email"
+                    type="text"
                     placeholder="Введите email"
                     value={email}
                     onChange={handleEmail}

@@ -1,6 +1,6 @@
 export const usersDb = [
     {
-        email:'nastya@mail.ru',
+        email:'user',
         password: 'user',
         name: 'Анастасия'
     }

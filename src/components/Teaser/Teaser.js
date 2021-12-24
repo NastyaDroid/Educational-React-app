@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
 import './Teaser.css';
-import { getTeaser } from "../../api/getData";
+import { getData } from "../../api/getData";
 
 const Teaser = () => {
     const [teaser, setTeaser] = useState([]);
 
     useEffect(() => {
-        getTeaser().then((res) => {
+        getData('/database/teasers.json').then((res) => {
             const { data } = res;
             const result = data.map((item) => item);
             setTeaser(result);

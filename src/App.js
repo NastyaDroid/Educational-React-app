@@ -11,6 +11,8 @@ import UserPage from "./pages/UserPage";
 import Login from "./components/Login/Login";
 import NotFound from './components/NotFound';
 import Cart from "./components/Cart/Cart";
+import Grinders from "./pages/Grinders";
+import GrinderDescription from "./pages/GrinderDescription";
 
 export const AuthContext = createContext(null);
 
@@ -49,6 +51,10 @@ const context = {isAuth, setIsAuth, login, logout}
               <Route index element={<CoffeeMachines />} />
               <Route path=":name" element={<CoffeeMachineDescription />} />
               </Route>
+              <Route path="grinders" element={<GrinderLayout />} >
+                <Route index element={<Grinders />} />
+                <Route path=":name" element={<GrinderDescription />} />
+              </Route>
             <Route path="profile" element={<UserPage/>} />
             <Route path="profileCart" element={<Cart />} />
             <Route path="login" element={<Login />} />
@@ -65,6 +71,12 @@ const context = {isAuth, setIsAuth, login, logout}
 
 
 export default App;
+
+const GrinderLayout = () => {
+  return (
+    <Outlet />
+  )
+}
 
 const CoffeeMachineLayout = () => {
   return (

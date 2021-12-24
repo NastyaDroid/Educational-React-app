@@ -9,7 +9,7 @@ const Card = ({ card }) => {
     return (
         <div className='product__card product'>
             <p className="product__category">{card.intendedUse}</p>
-            <Link to={`/coffeemachines/${card.name}`} className='product__name'>{card.name}</Link>
+            <Link to={`/${card.type}/${card.name}`} className='product__name'>{card.name}</Link>
             <img className='product__image' src={card.url} alt={card.name} width={250} height={250} />
             <div className='product__buy'>
                 <span className='product__price'>{card.price + 'P'}</span>

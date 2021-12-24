@@ -5,20 +5,21 @@ import './CoffeeMachineCard.css';
 import { useContext } from 'react';
 import { CartContext } from '../../CartContext';
 
-const CoffeeMachineCard= () => {
+const GrinderCard= () => {
     const cart = useContext(CartContext);
-    const [machine, setMachine] = useState(null);
+    const [grinder, setGrinder] = useState(null);
     const {name} = useParams();
     
     useEffect(() => {
-        getData('/database/coffeeMachines.json').then((res) => {
+        getData('/database/grinders.json').then((res) => {
             const {data} = res;
+            console.log({data})
             const result = data.find((item) => item.name === name)
-            setMachine(result)
+            setGrinder(result)
         })
     }, [name])
 
-    if (!machine) {
+    if (!grinder) {
         return (
             <div>Загружаем...</div>
         )
@@ -27,16 +28,16 @@ const CoffeeMachineCard= () => {
             <div className='card__container card'>
                 <div className='card__info'>
                     <h2 className='card__title'>{name}</h2>
-                    <img className='card__image' src={`${process.env.PUBLIC_URL}/${machine.url}`}  alt={machine.name} width={500} height={500}/>
+                    <img className='card__image' src={`${process.env.PUBLIC_URL}/${grinder.url}`}  alt={grinder.name} width={500} height={500}/>
                     <h3 className='card__subtitle'>Описание</h3>
-                    <p className='card__description'>{machine.description}</p>
+                    <p className='card__description'>{grinder.description}</p>
                 </div>
                 <div className='card__aside'>
-                    <p className='card__price'>{machine.price} P</p>
-                    <button className='card__btn btn' onClick={() => cart.append(machine, 1)}>Добавить в корзину</button>
+                    <p className='card__price'>{grinder.price} P</p>
+                    <button className='card__btn btn' onClick={() => cart.append(grinder, 1)}>Добавить в корзину</button>
                 </div>
             </div>
            )
     }
 
-export default CoffeeMachineCard;
+export default GrinderCard;
