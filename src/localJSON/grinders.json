@@ -1,8 +1,8 @@
 [
-    { "intendedUse": "Электрическая кофемолка", "name": "Timemore Grinder Go", "price": 10900, "url": "./img/grinders/timemore.webp", "type": "grinders", "id": 0 },
-    { "intendedUse": "Электрическая кофемолка", "name": "Eureka Mignon Filtro", "price": 16500, "url": "./img/grinders/filtro.webp", "type": "grinders", "id": 1 },
-    { "intendedUse": "Электрическая кофемолка", "name": "Fiorenzato F6 Drogheria ", "price": 46990, "url": "./img/grinders/fiorenzato.webp", "type": "grinders", "id": 2 },
-    { "intendedUse": "Электрическая кофемолка", "name": "Eureka Mignon Specialita 16CR", "price": 35990, "url": "./img/grinders/specialista.webp", "type": "grinders", "id": 3 }, 
-    { "intendedUse": "Электрическая кофемолка", "name": "HeyCafe HC-880 LAB", "price": 99000, "url": "./img/grinders/lab.webp", "type": "grinders", "id": 4 },
-    { "intendedUse": "Электрическая кофемолка", "name": "HEYCAFE Hc-880 Lab S", "price": 99000, "url": "./img/grinders/labs.webp", "type": "grinders", "id": 5 }
+    { "intendedUse": "Электрическая кофемолка", "name": "Timemore Grinder Go", "price": 10900, "url": "./img/grinders/timemore.webp", "type": "grinders", "id": "G0" },
+    { "intendedUse": "Электрическая кофемолка", "name": "Eureka Mignon Filtro", "price": 16500, "url": "./img/grinders/filtro.webp", "type": "grinders", "id": "G1" },
+    { "intendedUse": "Электрическая кофемолка", "name": "Fiorenzato F6 Drogheria ", "price": 46990, "url": "./img/grinders/fiorenzato.webp", "type": "grinders", "id": "G2" },
+    { "intendedUse": "Электрическая кофемолка", "name": "Eureka Mignon Specialita 16CR", "price": 35990, "url": "./img/grinders/specialista.webp", "type": "grinders", "id": "G3" }, 
+    { "intendedUse": "Электрическая кофемолка", "name": "HeyCafe HC-880 LAB", "price": 99000, "url": "./img/grinders/lab.webp", "type": "grinders", "id": "G4" },
+    { "intendedUse": "Электрическая кофемолка", "name": "HEYCAFE Hc-880 Lab S", "price": 99000, "url": "./img/grinders/labs.webp", "type": "grinders", "id": "G5" }
   ]

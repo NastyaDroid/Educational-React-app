@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import {getData} from "../../api/getData";
-import './CoffeeMachineCard.css';
+import './ProductDescription.css';
 import { useContext } from 'react';
 import { CartContext } from '../../CartContext';
 

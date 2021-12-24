@@ -24,8 +24,8 @@
     .main__teaser{
         justify-content: center;
     }
-    .teaser__item:nth-child(2n+1){
-        margin-right: 0;
+    .teaser__item {
+        margin-bottom: 1.2rem;
     }
 }
 @media (max-width: 420px) {

@@ -27,7 +27,7 @@ const Cart = () => {
     return (
         <div className="cart__container">
             <CartList />
-            <button className="cart__btn btn">Оформить заказ</button>
+            {/* <button className="cart__btn btn">Оформить заказ</button> */}
         </div>
     )
 }

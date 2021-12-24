@@ -3,15 +3,18 @@ import CartItem from '../CartItem/CartItem';
 import { CartContext } from "../../CartContext";
 import { Link } from "react-router-dom";
 import './CartList.css';
+import { AuthContext } from '../../App';
 
 const CartList = () => {
     const cart = useContext(CartContext);
+    const { isAuth } = useContext(AuthContext);
     const cost = cart.items.reduce((sum, item) => sum + item.price * item.quantity, 0);
     
     return (
         <section className="cart__container cart">
             <h2>Ваша корзина</h2>
             {cart.items.length ? (
+                <>
                 <table className="cart__table table">
                 <thead>
                     <tr>
@@ -24,7 +27,7 @@ const CartList = () => {
                 </thead>
                 <tbody>
                     {cart.items.map(item =>
-                        <CartItem key={item.id} {...item} />
+                        <CartItem key={item.name} {...item} />
                     )}
                     <tr>
                         <td className="table__title" colSpan="3">Итого</td>
@@ -33,10 +36,12 @@ const CartList = () => {
                     </tr>
                 </tbody>
             </table>
+            {isAuth && <button className="cart__btn btn">Оформить заказ</button>}
+            </>
         ) : (
             <>
                 <p>Ваша корзина пуста</p>
-                <Link className="link" to="/coffeemachines" ><button className="cart__btn btn">Начать покупки</button></Link>
+                <Link className="link" to="/" ><button className="cart__btn btn">Начать покупки</button></Link>
             </>
 
         )}

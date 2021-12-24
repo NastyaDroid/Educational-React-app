@@ -57,7 +57,7 @@ const UserProfile = () => {
                         </tr>
                         <tr>
                             <td>Email:</td>
-                            <td>nastya@mail.ru</td>
+                            <td>user</td>
                         </tr>
                     </tbody>
                 </table>

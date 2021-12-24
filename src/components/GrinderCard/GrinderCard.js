@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import {getData} from "../../api/getData";
-import './CoffeeMachineCard.css';
+import './ProductDescription.css';
 import { useContext } from 'react';
 import { CartContext } from '../../CartContext';
 
@@ -13,7 +13,6 @@ const GrinderCard= () => {
     useEffect(() => {
         getData('/database/grinders.json').then((res) => {
             const {data} = res;
-            console.log({data})
             const result = data.find((item) => item.name === name)
             setGrinder(result)
         })
