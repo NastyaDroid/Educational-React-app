@@ -2,7 +2,7 @@
     { "intendedUse": "Профессиональная кофемашина", "name": "ROCKET Appartamento", "price": 139900, "url": "./img/rocket.webp", "type": "coffeemachines", "id": "M0" },
     { "intendedUse": "Профессиональная кофемашина", "name": "Conti CC100 Compact TC 2", "price": 202000, "url": "./img/contiCC100.webp", "type": "coffeemachines", "id": "M1" },
     { "intendedUse": "Профессиональная кофемашина", "name": "Simonelli Appia II", "price": 133000, "url": "./img/simonelliAppia.jpg", "type": "coffeemachines", "id": "M2" },
-    { "intendedUse": "Профессиональная кофемашина", "name": "Ascaso Barista T zero", "price": 302000, "url": "./img/ascaso.webp", "id": "M3" },
+    { "intendedUse": "Профессиональная кофемашина", "name": "Ascaso Barista T zero", "price": 302000, "url": "./img/ascaso.webp", "type": "coffeemachines", "id": "M3" },
     { "intendedUse": "Профессиональная кофемашина", "name": "Conti CС200 С Дисплеем", "price": 240000, "url": "./img/contiCC200.webp", "type": "coffeemachines", "id": "M4" },
     { "intendedUse": "Профессиональная кофемашина", "name": "Conti Monte Carlo Ultima", "price": 739000, "url": "./img/contiMonte.webp", "type": "coffeemachines", "id": "M5" },
     { "intendedUse": "Кофемашина для дома", "name": "Moccamaster KBGT", "price": 22990, "url": "./img/MoccaKBGT.webp", "type": "coffeemachines", "id": "M6" },
