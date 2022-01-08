@@ -1,9 +1,9 @@
-import React, { useContext } from "react";
+import React from "react";
 import { Link } from 'react-router-dom';
 import CartIcon from "./CartIcon";
 import FaceIcon from "./FaceIcon";
 import ShowAlert from '../ShowAlert/ShowAlert';
-import { AuthContext } from '../../App';
+import { useAuth } from '../../AuthContext';
 
 const profileData = { 
     title: "Профиль",
@@ -16,7 +16,7 @@ const profileData = {
 
 const Profile = () => {
 
-    const { isAuth } = useContext(AuthContext);
+    const { isAuth } = useAuth();
 
     return (
         <div className='header__profile profile'>

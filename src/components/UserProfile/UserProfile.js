@@ -1,12 +1,12 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { AuthContext } from '../../App';
+import { useAuth } from '../../AuthContext';
 import './UserProfile.css';
 
 
 
 const UserProfile = () => {
-    const { isAuth, logout } = useContext(AuthContext)
+    const { isAuth, logout } = useAuth();
 
     if (!isAuth) {
         return (

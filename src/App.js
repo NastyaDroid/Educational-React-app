@@ -1,8 +1,8 @@
-import React, {createContext, useEffect, useState} from "react";
+import React from "react";
 import { BrowserRouter as Router, Routes, Route, Outlet } from 'react-router-dom';
 import './App.css';
-import {usersDb} from "./api/users";
 import { CartContextProvider } from "./CartContext";
+import { AuthContextProvider } from "./AuthContext";
 import Header from './components/Header/Header';
 import Home from './pages/Home';
 import CoffeeMachines from './pages/CoffeeMachines';
@@ -14,35 +14,12 @@ import Cart from "./components/Cart/Cart";
 import Grinders from "./pages/Grinders";
 import GrinderDescription from "./pages/GrinderDescription";
 
-export const AuthContext = createContext(null);
 
 const App = () => {
-  const [isAuth, setIsAuth] = useState(false)
-
-  useEffect(() => {
-      localStorage.setItem('users', JSON.stringify(usersDb))
-
-      if (localStorage.getItem('isAuth')) {
-          setIsAuth(true)
-      }
-
-  }, [])
-  function login() {
-    localStorage.setItem('isAuth', 'true')
-    setIsAuth(true)
-}
-
-function logout() {
-    localStorage.removeItem('isAuth')
-    setIsAuth(false)
-}
-
-const context = {isAuth, setIsAuth, login, logout}
-
-
+  
   return (
     <CartContextProvider>
-    <AuthContext.Provider value={context}>
+    <AuthContextProvider>
       <Router>
         <Routes>
           <Route path="/" element={<Layout />} >
@@ -62,7 +39,7 @@ const context = {isAuth, setIsAuth, login, logout}
           </Route>
         </Routes>
       </Router>
-      </AuthContext.Provider>
+      </AuthContextProvider>
       </CartContextProvider>
   )
 }

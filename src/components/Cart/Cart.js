@@ -1,11 +1,11 @@
-import React, { useContext } from "react";
+import React from "react";
 import CartList from "../CartList/CartList";
-import { AuthContext } from '../../App';
+import { useAuth } from '../../AuthContext';
 import { Link } from 'react-router-dom';
 import './Cart.css'
 
 const Cart = () => {
-    const { isAuth } = useContext(AuthContext);
+    const { isAuth } = useAuth();
 
     if (!isAuth) {
         return (

@@ -3,11 +3,11 @@ import CartItem from '../CartItem/CartItem';
 import { CartContext } from "../../CartContext";
 import { Link } from "react-router-dom";
 import './CartList.css';
-import { AuthContext } from '../../App';
+import { useAuth } from '../../AuthContext';
 
 const CartList = () => {
     const cart = useContext(CartContext);
-    const { isAuth } = useContext(AuthContext);
+    const { isAuth } = useAuth();
     const cost = cart.items.reduce((sum, item) => sum + item.price * item.quantity, 0);
     
     return (
